@@ -1,0 +1,732 @@
+{
+	"parent": "block/block",
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "block/texture_0",
+		"origin_beacon_glass": "block/texture_0",
+		"origin_beacon_obsidian": "block/texture_1",
+		"origin_beacon_orb": "block/texture_2",
+		"origin_beacon_orb_top": "block/texture_3",
+		"origin_beacon_corners": "block/texture_4"
+	},
+	"elements": [
+		{
+			"name": "Glass shell",
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#origin_beacon_glass"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#origin_beacon_glass"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#origin_beacon_glass"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#origin_beacon_glass"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#origin_beacon_glass"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#origin_beacon_glass"}
+			}
+		},
+		{
+			"name": "Obsidian base",
+			"from": [2, 0.1, 2],
+			"to": [14, 3, 14],
+			"faces": {
+				"north": {"uv": [2, 0, 14, 3], "texture": "#origin_beacon_obsidian"},
+				"east": {"uv": [2, 0, 14, 3], "texture": "#origin_beacon_obsidian"},
+				"south": {"uv": [2, 0, 14, 3], "texture": "#origin_beacon_obsidian"},
+				"west": {"uv": [2, 0, 14, 3], "texture": "#origin_beacon_obsidian"},
+				"up": {"uv": [2, 2, 14, 14], "texture": "#origin_beacon_obsidian"},
+				"down": {"uv": [2, 2, 14, 14], "texture": "#origin_beacon_obsidian"}
+			}
+		},
+		{
+			"name": "Inner beacon texture",
+			"from": [3, 3, 3],
+			"to": [13, 14, 13],
+			"faces": {
+				"north": {"uv": [3, 2, 13, 13], "texture": "#origin_beacon_orb"},
+				"east": {"uv": [3, 2, 13, 13], "texture": "#origin_beacon_orb"},
+				"south": {"uv": [3, 2, 13, 13], "texture": "#origin_beacon_orb"},
+				"west": {"uv": [3, 2, 13, 13], "texture": "#origin_beacon_orb"},
+				"up": {"uv": [3, 3, 13, 13], "texture": "#origin_beacon_orb_top"},
+				"down": {"uv": [3, 3, 13, 13], "texture": "#origin_beacon_orb_top"}
+			}
+		},
+		{
+			"from": [4, 13, 4],
+			"to": [6, 14, 5],
+			"faces": {
+				"north": {"uv": [14, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 2, 1], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 2, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 2, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [4, 11, 3],
+			"to": [6, 13, 4],
+			"faces": {
+				"north": {"uv": [0, 0, 2, 2], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 1, 2], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 2, 2], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [15, 14, 16, 16], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [14, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 2, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [10, 11, 3],
+			"to": [12, 13, 4],
+			"faces": {
+				"north": {"uv": [0, 0, 2, 2], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [15, 14, 16, 16], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 2, 2], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 1, 2], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [14, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 2, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [10, 11, 12],
+			"to": [12, 13, 13],
+			"faces": {
+				"north": {"uv": [0, 0, 2, 2], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [15, 14, 16, 16], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 2, 2], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 1, 2], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [14, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 2, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [4, 11, 12],
+			"to": [6, 13, 13],
+			"faces": {
+				"north": {"uv": [0, 0, 2, 2], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 1, 2], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 2, 2], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [15, 14, 16, 16], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [14, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 2, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [4, 4, 12],
+			"to": [6, 6, 13],
+			"faces": {
+				"north": {"uv": [0, 0, 2, 2], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 1, 2], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 2, 2], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [15, 14, 16, 16], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 2, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [14, 15, 16, 16], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [10, 4, 12],
+			"to": [12, 6, 13],
+			"faces": {
+				"north": {"uv": [0, 0, 2, 2], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [15, 14, 16, 16], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 2, 2], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 1, 2], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 2, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [14, 15, 16, 16], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [10, 4, 3],
+			"to": [12, 6, 4],
+			"faces": {
+				"north": {"uv": [0, 0, 2, 2], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [15, 14, 16, 16], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 2, 2], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 1, 2], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 2, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [14, 15, 16, 16], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [4, 4, 3],
+			"to": [6, 6, 4],
+			"faces": {
+				"north": {"uv": [0, 0, 2, 2], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 1, 2], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 2, 2], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [15, 14, 16, 16], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 2, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [14, 15, 16, 16], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [3, 4, 4],
+			"to": [4, 6, 6],
+			"faces": {
+				"north": {"uv": [15, 14, 16, 16], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 2, 2], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 1, 2], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 2, 2], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 1, 2], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [15, 14, 16, 16], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [3, 4, 10],
+			"to": [4, 6, 12],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 2], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 2, 2], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [15, 14, 16, 16], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 2, 2], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 1, 2], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [15, 14, 16, 16], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [12, 4, 10],
+			"to": [13, 6, 12],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 2], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 2, 2], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [15, 14, 16, 16], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 2, 2], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 1, 2], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [15, 14, 16, 16], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [12, 4, 4],
+			"to": [13, 6, 6],
+			"faces": {
+				"north": {"uv": [15, 14, 16, 16], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 2, 2], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 1, 2], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 2, 2], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 1, 2], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [15, 14, 16, 16], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [12, 11, 4],
+			"to": [13, 13, 6],
+			"faces": {
+				"north": {"uv": [15, 14, 16, 16], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 2, 2], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 1, 2], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 2, 2], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [15, 14, 16, 16], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 1, 2], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [3, 11, 4],
+			"to": [4, 13, 6],
+			"faces": {
+				"north": {"uv": [15, 14, 16, 16], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 2, 2], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 1, 2], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 2, 2], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [15, 14, 16, 16], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 1, 2], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [3, 11, 10],
+			"to": [4, 13, 12],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 2], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 2, 2], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [15, 14, 16, 16], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 2, 2], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [15, 14, 16, 16], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 1, 2], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [12, 11, 10],
+			"to": [13, 13, 12],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 2], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 2, 2], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [15, 14, 16, 16], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 2, 2], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [15, 14, 16, 16], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 1, 2], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [10, 13, 4],
+			"to": [12, 14, 5],
+			"faces": {
+				"north": {"uv": [14, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 2, 1], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 2, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 2, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [10, 3, 4],
+			"to": [12, 4, 5],
+			"faces": {
+				"north": {"uv": [14, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 2, 1], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 2, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 2, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [4, 3, 4],
+			"to": [6, 4, 5],
+			"faces": {
+				"north": {"uv": [14, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 2, 1], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 2, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 2, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [10, 3, 11],
+			"to": [12, 4, 12],
+			"faces": {
+				"north": {"uv": [0, 0, 2, 1], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [14, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 2, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 2, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [4, 3, 11],
+			"to": [6, 4, 12],
+			"faces": {
+				"north": {"uv": [0, 0, 2, 1], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [14, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 2, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 2, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [4, 13, 11],
+			"to": [6, 14, 12],
+			"faces": {
+				"north": {"uv": [0, 0, 2, 1], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [14, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 2, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 2, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [10, 13, 11],
+			"to": [12, 14, 12],
+			"faces": {
+				"north": {"uv": [0, 0, 2, 1], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [14, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 2, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 2, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [11, 13, 10],
+			"to": [12, 14, 11],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [11, 13, 5],
+			"to": [12, 14, 6],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [4, 13, 5],
+			"to": [5, 14, 6],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [4, 13, 10],
+			"to": [5, 14, 11],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [11, 3, 10],
+			"to": [12, 4, 11],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [11, 3, 5],
+			"to": [12, 4, 6],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [4, 3, 5],
+			"to": [5, 4, 6],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [4, 3, 10],
+			"to": [5, 4, 11],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [3, 3, 9],
+			"to": [4, 4, 10],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [3, 3, 6],
+			"to": [4, 4, 7],
+			"faces": {
+				"north": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [6, 3, 3],
+			"to": [7, 4, 4],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [9, 3, 3],
+			"to": [10, 4, 4],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [12, 3, 6],
+			"to": [13, 4, 7],
+			"faces": {
+				"north": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [12, 3, 9],
+			"to": [13, 4, 10],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [9, 3, 12],
+			"to": [10, 4, 13],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [6, 3, 12],
+			"to": [7, 4, 13],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [3, 6, 12],
+			"to": [4, 7, 13],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [3, 6, 3],
+			"to": [4, 7, 4],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [12, 6, 3],
+			"to": [13, 7, 4],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [12, 6, 12],
+			"to": [13, 7, 13],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [12, 10, 12],
+			"to": [13, 11, 13],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [3, 10, 12],
+			"to": [4, 11, 13],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [3, 10, 3],
+			"to": [4, 11, 4],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [12, 10, 3],
+			"to": [13, 11, 4],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [9, 13, 3],
+			"to": [10, 14, 4],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [6, 13, 3],
+			"to": [7, 14, 4],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [3, 13, 6],
+			"to": [4, 14, 7],
+			"faces": {
+				"north": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [3, 13, 9],
+			"to": [4, 14, 10],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [6, 13, 12],
+			"to": [7, 14, 13],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [9, 13, 12],
+			"to": [10, 14, 13],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [12, 13, 9],
+			"to": [13, 14, 10],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"}
+			}
+		},
+		{
+			"from": [12, 13, 6],
+			"to": [13, 14, 7],
+			"faces": {
+				"north": {"uv": [15, 15, 16, 16], "texture": "#origin_beacon_corners"},
+				"east": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"south": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#origin_beacon_corners"}
+			}
+		}
+	],
+	"groups": [0, 1, 2,
+		{
+			"name": "Inner beacon corners",
+			"origin": [0, 0, 0],
+			"children": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58]
+		}
+	]
+}
